@@ -1,0 +1,20 @@
+#include<stdio.h>
+const min_ch = 60;
+int main(void)
+{
+    int min, ch, min_ost;
+    while(1) 
+    {
+        printf("Введите кол-во минут: \n");
+        scanf("%d", &min);
+        if (min <= 0)
+        {
+            printf("Попробуйте еще раз\n");
+            break;
+        }
+        ch = min / min_ch;
+        min_ost = min % min_ch;
+        printf("%d минут в часах: %d часов и %d минут\n", min, ch, min_ost);
+    }
+    return 0;
+}
