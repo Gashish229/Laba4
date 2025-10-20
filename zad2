@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main(void)
+{
+    int chisel, konec;
+    printf("Введите число: \n");
+    scanf("%d", &chisel);
+    konec = chisel + 10;
+    while (chisel <= konec)
+    {
+        printf("%d ", chisel);
+        chisel++;
+    }
+    printf("\n");
+    return 0;
+}
